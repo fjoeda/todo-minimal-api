@@ -1,0 +1,30 @@
+@TodoMinimal_HostAddress = https://localhost:44347
+
+
+GET {{TodoMinimal_HostAddress}}/todo
+
+###
+
+POST {{TodoMinimal_HostAddress}}/todo
+Content-Type: application/json
+
+{
+  "todoTask": "todo example"
+}
+###
+
+PUT {{TodoMinimal_HostAddress}}/todo/1
+Content-Type: application/json
+
+{
+  "todoTask": "todo example"
+}
+###
+
+PUT {{TodoMinimal_HostAddress}}/todo/complete/2
+
+###
+
+GET {{TodoMinimal_HostAddress}}/todo/completed
+
+###
